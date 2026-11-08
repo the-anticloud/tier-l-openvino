@@ -1,0 +1,40 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "index.html",
+    "distDir": "."
+  },
+  "package": {
+    "productName": "L_OPENVINO",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "gg.anticloud.l_openvino",
+      "category": "DeveloperTool",
+      "shortDescription": "L_OPENVINO \u2014 Anticloud Sovereign AI Infrastructure",
+      "longDescription": "Installer for L_OPENVINO, part of the Anticloud sovereign AI infrastructure stack"
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "title": "L_OPENVINO Installer",
+        "width": 900,
+        "height": 700,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ]
+  }
+}

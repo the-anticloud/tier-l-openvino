@@ -1,0 +1,3 @@
+# 29_INVESTOR_MEMO
+
+Documentation for L_OPENVINO - 29_INVESTOR_MEMO

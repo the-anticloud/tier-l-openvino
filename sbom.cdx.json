@@ -1,0 +1,438 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:b7a8ba89-ad66-5bdc-b32c-590334368325",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-13T21:01:09Z",
+    "component": {
+      "type": "application",
+      "name": "L_OPENVINO",
+      "version": "846954b7edb6",
+      "bom-ref": "pkg:generic/anticloud/L_OPENVINO@846954b7edb6",
+      "purl": "pkg:generic/anticloud/L_OPENVINO@846954b7edb6",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "846954b7edb6ab9c981cc0d2ee4d19eb462977f4"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/openvinotoolkit/openvino"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "OpenVINODeveloperScripts",
+      "version": "unspecified",
+      "purl": "pkg:generic/OpenVINODeveloperScripts",
+      "bom-ref": "native/OpenVINODeveloperScripts@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "abseil",
+      "version": "20260107.1",
+      "purl": "pkg:generic/abseil@20260107.1",
+      "bom-ref": "conan/abseil@20260107.1"
+    },
+    {
+      "type": "library",
+      "name": "protobuf",
+      "version": "6.33.5",
+      "purl": "pkg:generic/protobuf@6.33.5",
+      "bom-ref": "conan/protobuf@6.33.5"
+    },
+    {
+      "type": "library",
+      "name": "pkgconf",
+      "version": "1.9.5",
+      "purl": "pkg:generic/pkgconf@1.9.5",
+      "bom-ref": "conan/pkgconf@1.9.5"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.16.6",
+      "purl": "pkg:pypi/numpy@1.16.6",
+      "bom-ref": "pypi/numpy@>=1.16.6"
+    },
+    {
+      "type": "library",
+      "name": "openvino-telemetry",
+      "version": ">=2023.2.1",
+      "purl": "pkg:pypi/openvino-telemetry@2023.2.1",
+      "bom-ref": "pypi/openvino-telemetry@>=2023.2.1"
+    },
+    {
+      "type": "library",
+      "name": "ovc",
+      "version": "= openvino.tools.ovc.main:main",
+      "purl": "pkg:pypi/ovc@openvino.tools.ovc.main:main",
+      "bom-ref": "pypi/ovc@= openvino.tools.ovc.main:main"
+    },
+    {
+      "type": "library",
+      "name": "benchmark_app",
+      "version": "= openvino.tools.benchmark.main:main",
+      "purl": "pkg:pypi/benchmark-app@openvino.tools.benchmark.main:main",
+      "bom-ref": "pypi/benchmark_app@= openvino.tools.benchmark.main:main"
+    },
+    {
+      "type": "library",
+      "name": "jobs",
+      "version": "=",
+      "purl": "pkg:pypi/jobs@",
+      "bom-ref": "pypi/jobs@="
+    },
+    {
+      "type": "library",
+      "name": "cmake-args",
+      "version": "=",
+      "purl": "pkg:pypi/cmake-args@",
+      "bom-ref": "pypi/cmake-args@="
+    },
+    {
+      "type": "library",
+      "name": "-DOpenVINODeveloperPackage_DIR",
+      "version": "={OPENVINO_BINARY_DIR}",
+      "purl": "pkg:pypi/-dopenvinodeveloperpackage-dir@{OPENVINO_BINARY_DIR}",
+      "bom-ref": "pypi/-DOpenVINODeveloperPackage_DIR@={OPENVINO_BINARY_DIR}"
+    },
+    {
+      "type": "library",
+      "name": "-DPython3_EXECUTABLE",
+      "version": "={sys.executable}",
+      "purl": "pkg:pypi/-dpython3-executable@{sys.executable}",
+      "bom-ref": "pypi/-DPython3_EXECUTABLE@={sys.executable}"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_BUILD_TYPE",
+      "version": "={CONFIG}",
+      "purl": "pkg:pypi/-dcmake-build-type@{CONFIG}",
+      "bom-ref": "pypi/-DCMAKE_BUILD_TYPE@={CONFIG}"
+    },
+    {
+      "type": "library",
+      "name": "-DCPACK_GENERATOR",
+      "version": "={CPACK_GENERATOR}",
+      "purl": "pkg:pypi/-dcpack-generator@{CPACK_GENERATOR}",
+      "bom-ref": "pypi/-DCPACK_GENERATOR@={CPACK_GENERATOR}"
+    },
+    {
+      "type": "library",
+      "name": "-DENABLE_PYTHON",
+      "version": "=ON",
+      "purl": "pkg:pypi/-denable-python@ON",
+      "bom-ref": "pypi/-DENABLE_PYTHON@=ON"
+    },
+    {
+      "type": "library",
+      "name": "-DENABLE_WHEEL",
+      "version": "=OFF",
+      "purl": "pkg:pypi/-denable-wheel@OFF",
+      "bom-ref": "pypi/-DENABLE_WHEEL@=OFF"
+    },
+    {
+      "type": "library",
+      "name": "Copied",
+      "version": "unspecified",
+      "purl": "pkg:pypi/copied",
+      "bom-ref": "pypi/Copied@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "openvino",
+      "version": "=openvino.frontend.pytorch.torchdynamo.backend:openvino",
+      "purl": "pkg:pypi/openvino@openvino.frontend.pytorch.torchdynamo.backend:openvino",
+      "bom-ref": "pypi/openvino@=openvino.frontend.pytorch.torchdynamo.backend:openvino"
+    },
+    {
+      "type": "library",
+      "name": "pkgconf",
+      "version": "unspecified",
+      "purl": "pkg:generic/pkgconf",
+      "bom-ref": "vcpkg/pkgconf@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "pugixml",
+      "version": "unspecified",
+      "purl": "pkg:generic/pugixml",
+      "bom-ref": "vcpkg/pugixml@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "tbb",
+      "version": "unspecified",
+      "purl": "pkg:generic/tbb",
+      "bom-ref": "vcpkg/tbb@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "rapidjson",
+      "version": "unspecified",
+      "purl": "pkg:generic/rapidjson",
+      "bom-ref": "vcpkg/rapidjson@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "xbyak",
+      "version": "unspecified",
+      "purl": "pkg:generic/xbyak",
+      "bom-ref": "vcpkg/xbyak@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "Git",
+      "version": "unspecified",
+      "purl": "pkg:generic/Git",
+      "bom-ref": "native/Git@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "OpenCL",
+      "version": "unspecified",
+      "purl": "pkg:generic/OpenCL",
+      "bom-ref": "native/OpenCL@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "ITT",
+      "version": "unspecified",
+      "purl": "pkg:generic/ITT",
+      "bom-ref": "native/ITT@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "OpenVINO",
+      "version": "unspecified",
+      "purl": "pkg:generic/OpenVINO",
+      "bom-ref": "native/OpenVINO@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "PkgConfig",
+      "version": "unspecified",
+      "purl": "pkg:generic/PkgConfig",
+      "bom-ref": "native/PkgConfig@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "OpenVINODeveloperPackage",
+      "version": "unspecified",
+      "purl": "pkg:generic/OpenVINODeveloperPackage",
+      "bom-ref": "native/OpenVINODeveloperPackage@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "OpenCV",
+      "version": "unspecified",
+      "purl": "pkg:generic/OpenCV",
+      "bom-ref": "native/OpenCV@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "IntelSYCL",
+      "version": "unspecified",
+      "purl": "pkg:generic/IntelSYCL",
+      "bom-ref": "native/IntelSYCL@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "Threads",
+      "version": "unspecified",
+      "purl": "pkg:generic/Threads",
+      "bom-ref": "native/Threads@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "Python3",
+      "version": "unspecified",
+      "purl": "pkg:generic/Python3",
+      "bom-ref": "native/Python3@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "pybind11",
+      "version": "unspecified",
+      "purl": "pkg:generic/pybind11",
+      "bom-ref": "native/pybind11@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "gunzip-maybe",
+      "version": "^1.4.2",
+      "purl": "pkg:npm/gunzip-maybe@^1.4.2",
+      "bom-ref": "npm/gunzip-maybe@^1.4.2"
+    },
+    {
+      "type": "library",
+      "name": "https-proxy-agent",
+      "version": "^7.0.2",
+      "purl": "pkg:npm/https-proxy-agent@^7.0.2",
+      "bom-ref": "npm/https-proxy-agent@^7.0.2"
+    },
+    {
+      "type": "library",
+      "name": "tar-fs",
+      "version": "^3.1.1",
+      "purl": "pkg:npm/tar-fs@^3.1.1",
+      "bom-ref": "npm/tar-fs@^3.1.1"
+    },
+    {
+      "type": "library",
+      "name": "@eslint/js",
+      "version": "^9.39.3",
+      "purl": "pkg:npm/@eslint/js@^9.39.3",
+      "bom-ref": "npm/@eslint/js@^9.39.3"
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "^22.19.1",
+      "purl": "pkg:npm/@types/node@^22.19.1",
+      "bom-ref": "npm/@types/node@^22.19.1"
+    },
+    {
+      "type": "library",
+      "name": "eslint",
+      "version": "^10.8.0",
+      "purl": "pkg:npm/eslint@^10.8.0",
+      "bom-ref": "npm/eslint@^10.8.0"
+    },
+    {
+      "type": "library",
+      "name": "eslint-config-prettier",
+      "version": "^10.1.8",
+      "purl": "pkg:npm/eslint-config-prettier@^10.1.8",
+      "bom-ref": "npm/eslint-config-prettier@^10.1.8"
+    },
+    {
+      "type": "library",
+      "name": "eslint-plugin-prettier",
+      "version": "^5.5.4",
+      "purl": "pkg:npm/eslint-plugin-prettier@^5.5.4",
+      "bom-ref": "npm/eslint-plugin-prettier@^5.5.4"
+    },
+    {
+      "type": "library",
+      "name": "globals",
+      "version": "^16.5.0",
+      "purl": "pkg:npm/globals@^16.5.0",
+      "bom-ref": "npm/globals@^16.5.0"
+    },
+    {
+      "type": "library",
+      "name": "mocha",
+      "version": "12.0.1",
+      "purl": "pkg:npm/mocha@12.0.1",
+      "bom-ref": "npm/mocha@12.0.1"
+    },
+    {
+      "type": "library",
+      "name": "prettier",
+      "version": "3.7.3",
+      "purl": "pkg:npm/prettier@3.7.3",
+      "bom-ref": "npm/prettier@3.7.3"
+    },
+    {
+      "type": "library",
+      "name": "random-bigint",
+      "version": "^0.0.1",
+      "purl": "pkg:npm/random-bigint@^0.0.1",
+      "bom-ref": "npm/random-bigint@^0.0.1"
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "^5.9.3",
+      "purl": "pkg:npm/typescript@^5.9.3",
+      "bom-ref": "npm/typescript@^5.9.3"
+    },
+    {
+      "type": "library",
+      "name": "typescript-eslint",
+      "version": "^8.56.1",
+      "purl": "pkg:npm/typescript-eslint@^8.56.1",
+      "bom-ref": "npm/typescript-eslint@^8.56.1"
+    },
+    {
+      "type": "library",
+      "name": "openvino-node",
+      "version": "..",
+      "purl": "pkg:npm/openvino-node@..",
+      "bom-ref": "npm/openvino-node@.."
+    },
+    {
+      "type": "library",
+      "name": "electron",
+      "version": "43.0.0",
+      "purl": "pkg:npm/electron@43.0.0",
+      "bom-ref": "npm/electron@43.0.0"
+    },
+    {
+      "type": "library",
+      "name": "@napi-rs/canvas",
+      "version": "^0.1.83",
+      "purl": "pkg:npm/@napi-rs/canvas@^0.1.83",
+      "bom-ref": "npm/@napi-rs/canvas@^0.1.83"
+    },
+    {
+      "type": "library",
+      "name": "args",
+      "version": "^5.0.3",
+      "purl": "pkg:npm/args@^5.0.3",
+      "bom-ref": "npm/args@^5.0.3"
+    },
+    {
+      "type": "library",
+      "name": "Doxygen",
+      "version": "unspecified",
+      "purl": "pkg:generic/Doxygen",
+      "bom-ref": "native/Doxygen@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "LATEX",
+      "version": "unspecified",
+      "purl": "pkg:generic/LATEX",
+      "bom-ref": "native/LATEX@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "openvino_sphinx_theme",
+      "version": "= openvino_sphinx_theme",
+      "purl": "pkg:pypi/openvino-sphinx-theme@openvino_sphinx_theme",
+      "bom-ref": "pypi/openvino_sphinx_theme@= openvino_sphinx_theme"
+    },
+    {
+      "type": "library",
+      "name": "sphinx",
+      "version": ">=",
+      "purl": "pkg:pypi/sphinx@",
+      "bom-ref": "pypi/sphinx@>="
+    },
+    {
+      "type": "library",
+      "name": "sphinx-sitemap",
+      "version": ">=",
+      "purl": "pkg:pypi/sphinx-sitemap@",
+      "bom-ref": "pypi/sphinx-sitemap@>="
+    }
+  ]
+}

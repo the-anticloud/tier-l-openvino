@@ -1,0 +1,3 @@
+# 27_DEPENDENCIES
+
+Documentation for L_OPENVINO - 27_DEPENDENCIES

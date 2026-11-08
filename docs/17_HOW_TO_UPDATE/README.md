@@ -1,0 +1,3 @@
+# 17_HOW_TO_UPDATE
+
+Documentation for L_OPENVINO - 17_HOW_TO_UPDATE
